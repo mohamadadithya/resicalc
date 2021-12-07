@@ -1,3 +1,4 @@
+/* Copyright 2021 by Mohamad Adithya */
 const resistor = document.querySelector('.resistor')
 const numOfBandRadios = document.querySelectorAll('.num-of-band')
 const thirdSelect = document.querySelector('.input-select.third')
