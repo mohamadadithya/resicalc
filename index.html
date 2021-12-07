@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Resicalc">
+    <meta name="description" content="Resistor calculator by Mohamad Adithya">
+    <meta name="keywords" content="resistor calculator, resistor color, calculator">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <title>Resicalc</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1 class="logo">Resicalc</h1>
+            <p class="description">This tool is used to decode information for color banded axial lead resistors. Select
+                the number of bands, then their colors to determine the value and tolerance of the resistors.</p>
+            <div class="card">
+                <form action="">
+                    <p class="fw-500">Number of Bands</p>
+                    <div class="radios-wrapper">
+                        <span class="input-radio">
+                            <input class="num-of-band" type="radio" name="num-of-band" id="4-band" value="4" checked>
+                            <label for="4-band">4 Band</label>
+                        </span>
+                        <span class="input-radio">
+                            <input class="num-of-band" type="radio" name="num-of-band" id="5-band" value="5">
+                            <label for="5-band">5 Band</label>
+                        </span>
+                        <span class="input-radio">
+                            <input class="num-of-band" type="radio" name="num-of-band" id="6-band" value="6">
+                            <label for="6-band">6 Band</label>
+                        </span>
+                    </div>
+                    <p class="fw-500">Resistor Parameters</p>
+                    <div class="selects-wrapper">
+                        <div class="input-select">
+                            <label class="custom-label" for="first-band">1st Band of Color</label>
+                            <select class="color-select" id="first-band">
+                                <option disabled selected>Choose the color</option>
+                                <option data-color="black" value="0">Black</option>
+                                <option data-color="brown" value="1">Brown</option>
+                                <option data-color="red" value="2">Red</option>
+                                <option data-color="orange" value="3">Orange</option>
+                                <option data-color="yellow" value="4">Yellow</option>
+                                <option data-color="green" value="5">Green</option>
+                                <option data-color="blue" value="6">Blue</option>
+                                <option data-color="violet" value="7">Violet</option>
+                                <option data-color="grey" value="8">Grey</option>
+                                <option data-color="white" value="9">White</option>
+                            </select>
+                        </div>
+                        <div class="input-select">
+                            <label class="custom-label" for="second-band">2nd Band of Color</label>
+                            <select class="color-select" id="second-band">
+                                <option disabled selected>Choose the color</option>
+                                <option data-color="black" value="0">Black</option>
+                                <option data-color="brown" value="1">Brown</option>
+                                <option data-color="red" value="2">Red</option>
+                                <option data-color="orange" value="3">Orange</option>
+                                <option data-color="yellow" value="4">Yellow</option>
+                                <option data-color="green" value="5">Green</option>
+                                <option data-color="blue" value="6">Blue</option>
+                                <option data-color="violet" value="7">Violet</option>
+                                <option data-color="grey" value="8">Grey</option>
+                                <option data-color="white" value="9">White</option>
+                            </select>
+                        </div>
+                        <div class="input-select third">
+                            <label class="custom-label" for="third-band">3rd Band of Color</label>
+                            <select class="color-select" id="third-band">
+                                <option disabled selected>Choose the color</option>
+                                <option data-color="black" value="0">Black</option>
+                                <option data-color="brown" value="1">Brown</option>
+                                <option data-color="red" value="2">Red</option>
+                                <option data-color="orange" value="3">Orange</option>
+                                <option data-color="yellow" value="4">Yellow</option>
+                                <option data-color="green" value="5">Green</option>
+                                <option data-color="blue" value="6">Blue</option>
+                                <option data-color="violet" value="7">Violet</option>
+                                <option data-color="grey" value="8">Grey</option>
+                                <option data-color="white" value="9">White</option>
+                            </select>
+                        </div>
+                        <div class="input-select">
+                            <label class="custom-label" for="multiplier">Multiplier</label>
+                            <select class="color-select" id="multiplier">
+                                <option disabled selected>Choose the color</option>
+                                <option data-color="black" value="">Black</option>
+                                <option data-color="brown" value="0">Brown</option>
+                                <option data-color="red" value="00">Red</option>
+                                <option data-color="orange" value="000">Orange</option>
+                                <option data-color="yellow" value="0000">Yellow</option>
+                                <option data-color="green" value="00000">Green</option>
+                                <option data-color="blue" value="000000">Blue</option>
+                                <option data-color="violet" value="0000000">Violet</option>
+                                <option data-color="grey" value="00000000">Grey</option>
+                                <option data-color="white" value="000000000">White</option>
+                            </select>
+                        </div>
+                        <div class="input-select">
+                            <label class="custom-label" for="tolerance">Tolerance</label>
+                            <select class="color-select" id="tolerance">
+                                <option disabled selected>Choose the color</option>
+                                <option data-color="brown" value="1">Brown</option>
+                                <option data-color="red" value="2">Red</option>
+                                <option data-color="green" value="0.5">Green</option>
+                                <option data-color="blue" value="0.25">Blue</option>
+                                <option data-color="violet" value="0.1">Violet</option>
+                                <option data-color="grey" value="0.05">Grey</option>
+                                <option data-color="gold" value="5">Gold</option>
+                                <option data-color="silver" value="10">Silver</option>
+                            </select>
+                        </div>
+                        <div class="input-select ppm">
+                            <label class="custom-label" for="ppm">PPM</label>
+                            <select class="color-select" id="ppm">
+                                <option disabled selected>Choose the color</option>
+                                <option data-color="brown" value="100">Brown</option>
+                                <option data-color="red" value="50">Red</option>
+                                <option data-color="orange" value="15">Orange</option>
+                                <option data-color="yellow" value="25">Yellow</option>
+                                <option data-color="blue" value="10">Blue</option>
+                                <option data-color="violet" value="5">Violet</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+                <div class="output">
+                    <h6>Output</h6>
+                    <svg class="resistor" width="201" height="36" viewBox="0 0 201 36" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect y="14" width="40" height="8" fill="#CDCDCD" />
+                        <rect x="161" y="14" width="40" height="8" fill="#CDCDCD" />
+                        <rect x="40" width="121" height="36" fill="#D7CF79" />
+                        <rect class="first-band band" x="51" width="8" height="36" fill="#CDCDCD" />
+                        <rect class="second-band band" x="66" width="8" height="36" fill="#CDCDCD" />
+                        <rect class="third-band band" x="82" width="8" height="36" fill="#CDCDCD" />
+                        <rect class="multiplier band" x="97" width="8" height="36" fill="#CDCDCD" />
+                        <rect class="tolerance band" x="127" width="8" height="36" fill="#CDCDCD" />
+                        <rect class="ppm band" x="142" width="8" height="36" fill="#CDCDCD" />
+                    </svg>
+                    <p class="fw-500">Value</p>
+                    <div class="value">
+                        <p class="price">-</p>
+                        <p class="tolerance"></p>
+                        <p class="ppm"></p>
+                    </div>
+                </div>
+            </div>
+            <footer class="copyright-text">&copy; 2021 <a href="https://m-adithya.my.id"
+                    class="author-link fw-500">Mohamad
+                    Adithya</a></footer>
+        </div>
+    </main>
+    <script src="/assets/js/app.min.js"></script>
+</body>
+
+</html>

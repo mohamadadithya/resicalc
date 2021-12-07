@@ -1,0 +1,155 @@
+:root {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  accent-color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  outline: none;
+}
+
+svg {
+  width: 100%;
+}
+
+main {
+  padding: 2em 0;
+}
+
+.container {
+  margin: 0 1.6rem;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.description {
+  color: grey;
+}
+
+.card {
+  display: block;
+  padding: 2rem;
+  border: 2px solid black;
+  border-radius: .6rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card .radios-wrapper {
+  border-bottom: 1px solid #CDCDCD;
+  padding-bottom: .8rem;
+  margin-bottom: 1rem;
+}
+
+.card .radios-wrapper .input-radio {
+  margin-top: .6rem;
+  margin-right: 1rem;
+  display: inline-block;
+}
+
+.card .selects-wrapper {
+  display: block;
+  margin: .5rem 0 1rem 0;
+}
+
+.card .selects-wrapper .input-select {
+  margin-bottom: 1rem;
+}
+
+.card .selects-wrapper .input-select .custom-label {
+  font-size: .9rem;
+}
+
+.card .selects-wrapper .input-select select {
+  display: block;
+  margin-top: .6rem;
+  width: 100%;
+  padding: .6rem;
+  border-radius: 6px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #F5f5f7;
+}
+
+.card .selects-wrapper .input-select.third, .card .selects-wrapper .input-select.ppm {
+  display: none;
+}
+
+.card .output {
+  background-color: #F5f5f7;
+  padding: 1rem;
+  border: 2px dotted black;
+  border-radius: 8px;
+}
+
+.card .output .resistor {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.card .output .resistor .third-band,
+.card .output .resistor .ppm {
+  display: none;
+}
+
+.card .output .value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card .output .value > p {
+  margin-right: 1rem;
+}
+
+.copyright-text .author-link {
+  color: black;
+  text-decoration: none;
+}
+
+@media (min-width: 992px) {
+  .card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2rem 0 2rem 2rem;
+  }
+  .card .selects-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 0;
+  }
+  .card .output {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    padding: 1rem 3rem;
+  }
+  .container {
+    margin: 0 4rem;
+  }
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+/*# sourceMappingURL=main.css.map */
